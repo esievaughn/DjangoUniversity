@@ -1,8 +1,6 @@
 from django.db import models
 
 
-
-
 # create objects that are mapped to database
 class DjangoClasses(models.Model):
     title = models.CharField(max_length=50, null=False)
@@ -17,3 +15,7 @@ class DjangoClasses(models.Model):
     def __str__(self):
         return self.title
 
+#create and save an object
+DjangoClasses.objects.create(title='forms', course_num=2343, instructor_name='Snape',duration=23)
+DjangoClasses.objects.create(title='migrations', course_num=2292, instructor_name='Mcgonagall',duration=.5)
+DjangoClasses.objects.create(title='models', course_num=2983, instructor_name='Sprout',duration=2)
