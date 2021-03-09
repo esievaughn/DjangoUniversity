@@ -1,4 +1,4 @@
-# DjangoUniversity
+# Django University
 
 ## Django Challenge:
 -Create a new project within Pycharm
